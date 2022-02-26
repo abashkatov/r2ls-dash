@@ -2,9 +2,9 @@
   <div>
     <Header />
     <Sidebar />
-    <v-content>
+    <v-main>
       <slot />
-    </v-content>
+    </v-main>
     <Footer />
   </div>
 </template>
