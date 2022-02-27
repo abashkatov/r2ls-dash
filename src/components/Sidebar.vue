@@ -21,23 +21,29 @@
           nav
           dense
       >
-        <v-list-item link>
+        <v-list-item link to="/">
           <v-list-item-icon>
             <v-icon>mdi-folder</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>My Files</v-list-item-title>
+          <v-list-item-title>Главная</v-list-item-title>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/profile">
           <v-list-item-icon>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Shared with me</v-list-item-title>
+          <v-list-item-title>Профиль</v-list-item-title>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/login">
           <v-list-item-icon>
             <v-icon>mdi-star</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Starred</v-list-item-title>
+          <v-list-item-title>Вход</v-list-item-title>
+        </v-list-item>
+        <v-list-item link to="/signup">
+          <v-list-item-icon>
+            <v-icon>mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Регистрация</v-list-item-title>
         </v-list-item>
       </v-list>
       <v-spacer></v-spacer>

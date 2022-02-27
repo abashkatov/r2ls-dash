@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <AppNotifications />
-    <Dashboard>
-      <Main />
-    </Dashboard>
+    <component :is="layout">
+      <AppNotifications />
+      <router-view :key="$route.path"></router-view>
+    </component>
   </v-app>
 </template>
 
@@ -11,6 +11,8 @@
 import Dashboard from "./layouts/Dashboard";
 import Main from "./views/Main";
 import AppNotifications from "@/common/components/AppNotifications";
+
+const defaultLayout = "Blank";
 
 export default {
   name: 'App',
@@ -20,6 +22,12 @@ export default {
   data: () => ({
     //
   }),
+  computed: {
+    layout: function () {
+      const layout = this.$route.meta.layout || defaultLayout;
+      return () => import(`@/layouts/${layout}.vue`);
+    },
+  },
 };
 </script>
 
