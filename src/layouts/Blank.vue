@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <v-app>
     <v-main>
       <slot />
     </v-main>
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>

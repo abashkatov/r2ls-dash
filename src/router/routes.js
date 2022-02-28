@@ -3,7 +3,7 @@ export default [
     path: "/",
     name: "Main",
     component: () => import("../views/Main.vue"),
-    meta: { layout: "Dashboard" },
+    meta: { layout: "Blank" },
   },
   {
     path: "/profile",

@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <v-app>
     <Header />
     <Sidebar />
     <v-main>
       <slot />
     </v-main>
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>
